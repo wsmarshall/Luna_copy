@@ -127,9 +127,15 @@ return new ICadGenerator(){
 				.movex(-60)
 				.movez(-16.5)
 				.setColor(javafx.scene.paint.Color.YELLOW)
+			CSG blueCube = new Cube(20, 20, 20).toCSG() //20 is arbitrary
+				.movex(-30)
+				.movez(-10)
+				.movey(30)
+				.setColor(javafx.scene.paint.Color.BLUE)
 			allCad.add(foot);
 			allCad.add(dlimb);
 			allCad.add(elimb);
+			allCad.add(blueCube);
 		}
 		
 		ArrayList<DHLink> dhLinks = d.getChain().getLinks()
