@@ -130,7 +130,7 @@ return new ICadGenerator(){
 			CSG blueCube = new Cube(20, 20, 20).toCSG() //20 is arbitrary
 				.movex(-30)
 				.movez(-10)
-				.movey(30)
+				.movey(10)
 				.setColor(javafx.scene.paint.Color.BLUE)
 			allCad.add(foot);
 			allCad.add(dlimb);
