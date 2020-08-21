@@ -13,6 +13,7 @@ import java.nio.file.Paths;
 
 import eu.mihosoft.vrl.v3d.CSG
 import eu.mihosoft.vrl.v3d.Cube
+import eu.mihosoft.vrl.v3d.Cylinder
 import eu.mihosoft.vrl.v3d.FileUtil;
 import eu.mihosoft.vrl.v3d.Transform;
 import javafx.scene.transform.Affine;
@@ -127,12 +128,12 @@ return new ICadGenerator(){
 				.movex(-60)
 				.movez(-16.5)
 				.setColor(javafx.scene.paint.Color.YELLOW)
-			CSG blueCube = new Cube(20, 20, 20).toCSG() //20 is arbitrary
-				.setColor(javafx.scene.paint.Color.BLUE)
+			CSG whiteCylinder = new Cylinder(20, 20, 10, (int)30).toCSG() //constants are arbitrary
+				.setColor(javafx.scene.paint.Color.WHITE)
 			allCad.add(foot);
 			allCad.add(dlimb);
 			allCad.add(elimb);
-			allCad.add(blueCube);
+			allCad.add(whiteCylinder);
 		}
 		
 		ArrayList<DHLink> dhLinks = d.getChain().getLinks()
