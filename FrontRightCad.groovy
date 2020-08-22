@@ -128,6 +128,7 @@ return new ICadGenerator(){
 				.movex(-60)
 				.movez(-16.5)
 				.setColor(javafx.scene.paint.Color.YELLOW)
+				//declare dh here to use?
 			CSG whiteCylinder = new Cylinder(20, 20, 10, (int)30).toCSG() //constants are arbitrary
 				.setColor(javafx.scene.paint.Color.WHITE)
 			allCad.add(foot);
@@ -135,6 +136,7 @@ return new ICadGenerator(){
 			allCad.add(elimb);
 			allCad.add(whiteCylinder);
 		}
+		
 		
 		ArrayList<DHLink> dhLinks = d.getChain().getLinks()
 		DHLink dh = dhLinks.get(linkIndex)
