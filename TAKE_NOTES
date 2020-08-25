@@ -35,6 +35,7 @@ import  eu.mihosoft.vrl.v3d.ext.quickhull3d.*
 import eu.mihosoft.vrl.v3d.parametrics.LengthParameter
 import eu.mihosoft.vrl.v3d.Vector3d
 
+/**import statements above*/
 
 double grid =25
 
@@ -53,7 +54,8 @@ CSG moveDHValues(CSG incoming,DHLink dh ){
 
 return new ICadGenerator(){
 
-		static final int bracketOneKeepawayDistance = 50
+/**this is... the distance away from the edges? other edges?*/
+		static final int bracketOneKeepawayDistance = 50 
 	//			private HashMap<String, GearManager>  map= new HashMap<>()
 	//			public  GearManager get(DHParameterKinematics b) {
 	//				if(map.get(b.getXml())==null) {
