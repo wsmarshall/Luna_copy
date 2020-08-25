@@ -54,7 +54,8 @@ CSG moveDHValues(CSG incoming,DHLink dh ){
 
 return new ICadGenerator(){
 
-/**this is... the distance away from the edges? other edges?*/
+/**this is... the distance away from the edges? other edges?*/ 
+
 		static final int bracketOneKeepawayDistance = 50 
 	//			private HashMap<String, GearManager>  map= new HashMap<>()
 	//			public  GearManager get(DHParameterKinematics b) {
@@ -102,6 +103,8 @@ return new ICadGenerator(){
 	.movey(-5)
 	LengthParameter offset		= new LengthParameter("printerOffset",0.5,[2,0])
 	double offsetValue = 0.6
+	
+	/**this runs to make the shape shown in creatureLab? */
 	@Override
 	public ArrayList<CSG> generateCad(DHParameterKinematics d, int linkIndex) {
 		offset.setMM(offsetValue)
@@ -566,6 +569,7 @@ return new ICadGenerator(){
 		return allCad;
 	}
 	
+	/**what's the difference between the CAD and the Body?*/
 	@Override
 	public ArrayList<CSG> generateBody(MobileBase b ) {
 
