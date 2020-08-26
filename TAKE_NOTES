@@ -601,6 +601,7 @@ return new ICadGenerator(){
 			insertCamera[0],
 			insertCamera[1]
 		])
+		/**cameraNutPart and cameraBlocks seem to be parts*/
 //		def cameraNutPart = Vitamins.get( insertCamera[0],insertCamera[1])
 //								.transformed(TransformFactory.nrToCSG(cameraNut))
 		def cameraBlock = CSG.unionAll(corners).hull()
