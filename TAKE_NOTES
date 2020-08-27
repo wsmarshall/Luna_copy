@@ -512,7 +512,7 @@ return new ICadGenerator(){
 			
 			allCad.addAll(FullBracket,ActuatorBracket,objectToGrab)
 		}
-		
+		/**what do link indexes do?*/
 		if(linkIndex==0) {
 			def z = dh.getD()-10-movingPartClearence/2
 			def supportBeam= new RoundedCube(linkYDimention+linkThickness*2.5,40+linkThickness*2,z)
