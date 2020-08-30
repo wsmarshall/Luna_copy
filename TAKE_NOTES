@@ -36,7 +36,7 @@ import eu.mihosoft.vrl.v3d.parametrics.LengthParameter
 import eu.mihosoft.vrl.v3d.Vector3d
 
 /**import statements above*/
-
+//TODO explore vitamins
 double grid =25
 
 CSG reverseDHValues(CSG incoming,DHLink dh ){
